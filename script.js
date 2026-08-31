@@ -363,7 +363,7 @@ elemento.innerHTML = `
         </h4>
 
         <p>
-            L ${producto.precio} × ${producto.cantidad}
+            L ${producto.precio} x ${producto.cantidad}
         </p>
 
     </div>
@@ -376,7 +376,7 @@ elemento.innerHTML = `
         class="remove-item"
         onclick="eliminarProducto(${index})">
 
-        ✕
+        X
 
     </button>
 
