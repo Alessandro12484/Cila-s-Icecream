@@ -463,7 +463,7 @@ if (checkoutButton) {
 
 
         let mensaje =
-            emojiHelado + " *CILA'S ICE CREAM* " + emojiHelado 
+            emojiHelado + "*CILA'S ICE CREAM*" + emojiHelado 
             emojiRecibo + " *NUEVO PEDIDO*\n\n" +
 
             emojiCorazon + "Hola!\n\n" +
