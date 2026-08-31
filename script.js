@@ -13,10 +13,10 @@ if (menuToggle) {
             menu.classList.toggle("active");
         });
 
-        if (menuToggle.textContent.trim() === "?") {
-            menuToggle.textContent = "?";
+        if (menuToggle.textContent.trim() === "☰") {
+            menuToggle.textContent = "✕";
         } else {
-            menuToggle.textContent = "?";
+            menuToggle.textContent = "☰";
         }
 
     });
