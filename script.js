@@ -13,10 +13,10 @@ if (menuToggle) {
             menu.classList.toggle("active");
         });
 
-        if (menuToggle.textContent.trim() === "?") {
-            menuToggle.textContent = "?";
+        if (menuToggle.textContent.trim() === "☰") {
+            menuToggle.textContent = "✕";
         } else {
-            menuToggle.textContent = "?";
+            menuToggle.textContent = "☰";
         }
 
     });
@@ -37,7 +37,7 @@ document.querySelectorAll(".nav-menu a").forEach(function(link) {
         });
 
         if (menuToggle) {
-            menuToggle.textContent = "?";
+            menuToggle.textContent = "☰";
         }
 
     });
