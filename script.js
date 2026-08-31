@@ -526,7 +526,7 @@ if (checkoutButton) {
             emojiHelado;
 
 
-        const numeroWhatsApp = "50497531463";
+        const numeroWhatsApp = "50498559682";
 
 
         const url =
