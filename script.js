@@ -270,7 +270,7 @@ addButtons.forEach(function(button) {
 
 
         // -----------------------------
-        // Abrir carrito autom�ticamente
+        // Abrir carrito automaticamente
         // -----------------------------
 
         if (cartOverlay) {
@@ -302,7 +302,7 @@ function actualizarCarrito() {
 
 
     // -----------------------------
-    // Carrito vac�o
+    // Carrito vacio
     // -----------------------------
 
     if (carrito.length === 0) {
@@ -310,7 +310,7 @@ function actualizarCarrito() {
         cartItems.innerHTML = `
 
             <p class="empty-cart">
-                ?? Tu carrito est� vac�o.
+                ?? Tu carrito esta vacio.
             </p>
 
         `;
@@ -445,7 +445,7 @@ if (checkoutButton) {
     checkoutButton.addEventListener("click", function() {
 
         if (carrito.length === 0) {
-            alert("Tu carrito est� vac�o.");
+            alert("Tu carrito esti vacio.");
             return;
         }
 
@@ -468,9 +468,9 @@ if (checkoutButton) {
 
             emojiRecibo + " *NUEVO PEDIDO*\n\n" +
 
-            emojiCorazon + " �Hola!\n\n" +
+            emojiCorazon + " Hola!\n\n" +
 
-            "Me gustar�a realizar el siguiente pedido:\n\n";
+            "Me gustaria realizar el siguiente pedido:\n\n";
 
 
         let total = 0;
@@ -518,10 +518,10 @@ if (checkoutButton) {
             "????????????????????\n\n" +
 
             emojiTelefono +
-            " Quedo atento(a) a su confirmaci�n.\n\n" +
+            " Quedo atento(a) a su confirmacion.\n\n" +
 
             emojiBrillo +
-            " �Muchas gracias! " +
+            " Muchas gracias! " +
             emojiCorazon +
             emojiHelado;
 
@@ -624,7 +624,7 @@ if (galleryDots) {
 }
 
 
-// Obtener puntos despu�s de crearlos
+// Obtener puntos despues de crearlos
 const dots =
     document.querySelectorAll(
         ".gallery-dot"
