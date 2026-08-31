@@ -376,7 +376,7 @@ elemento.innerHTML = `
         class="remove-item"
         onclick="eliminarProducto(${index})">
 
-        X
+        ✕
 
     </button>
 
