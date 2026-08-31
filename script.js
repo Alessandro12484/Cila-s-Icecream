@@ -302,7 +302,7 @@ function actualizarCarrito() {
 
 
     // -----------------------------
-    // Carrito vac�o
+    // Carrito vacío
     // -----------------------------
 
     if (carrito.length === 0) {
@@ -310,7 +310,7 @@ function actualizarCarrito() {
         cartItems.innerHTML = `
 
             <p class="empty-cart">
-                ?? Tu carrito est� vac�o.
+                Tu carrito está vacío.
             </p>
 
         `;
