@@ -354,35 +354,33 @@ function actualizarCarrito() {
         elemento.className = "cart-item";
 
 
-        elemento.innerHTML = `
+elemento.innerHTML = `
 
-            <div class="cart-item-info">
+    <div class="cart-item-info">
 
-                <h4>
-                    ${producto.nombre}
-                </h4>
+        <h4>
+            ${producto.nombre}
+        </h4>
 
-                <p>
-                    L ${producto.precio} � ${producto.cantidad}
-                </p>
+        <p>
+            L ${producto.precio} × ${producto.cantidad}
+        </p>
 
-            </div>
+    </div>
 
+    <strong>
+        L ${subtotal}
+    </strong>
 
-            <strong>
-                L ${subtotal}
-            </strong>
+    <button
+        class="remove-item"
+        onclick="eliminarProducto(${index})">
 
+        ✕
 
-            <button
-                class="remove-item"
-                onclick="eliminarProducto(${index})">
+    </button>
 
-                ?
-
-            </button>
-
-        `;
+`;
 
 
         cartItems.appendChild(elemento);
