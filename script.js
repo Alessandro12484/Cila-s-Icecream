@@ -445,30 +445,22 @@ if (checkoutButton) {
     checkoutButton.addEventListener("click", function() {
 
         if (carrito.length === 0) {
-            alert("Tu carrito esta vacio.");
+
+            alert("Tu carrito está vacío.");
+
             return;
+
         }
 
-        // Crear emojis directamente con Unicode
-        const emojiHelado = String.fromCodePoint(0x1F366);
-        const emojiRecibo = String.fromCodePoint(0x1F9FE);
-        const emojiCorazon = String.fromCodePoint(0x1F495);
-        const emojiPostre = String.fromCodePoint(0x1F368);
-        const emojiNumero = String.fromCodePoint(0x1F522);
-        const emojiDinero = String.fromCodePoint(0x1F4B0);
-        const emojiBillete = String.fromCodePoint(0x1F4B5);
-        const emojiTarjeta = String.fromCodePoint(0x1F4B3);
-        const emojiTelefono = String.fromCodePoint(0x1F4F2);
-        const emojiBrillo = String.fromCodePoint(0x2728);
-
-
         let mensaje =
-            emojiHelado + "*CILA'S ICE CREAM*" + emojiHelado 
-            emojiRecibo + " *NUEVO PEDIDO*\n\n" +
+            "🍦 *CILA'S ICE CREAM* 🍦\n" +
+            "━━━━━━━━━━━━━━━━━━━━\n\n" +
 
-            emojiCorazon + "Hola!\n\n" +
+            "🧾 *NUEVO PEDIDO*\n\n" +
 
-            "Me gustaria realizar el siguiente pedido:\n\n";
+            "¡Hola! 💕\n" +
+
+            "Me gustaría realizar el siguiente pedido:\n\n";
 
 
         let total = 0;
@@ -483,22 +475,19 @@ if (checkoutButton) {
 
 
             mensaje +=
-                emojiPostre + " *" +
+                "🍨 *" +
                 producto.nombre +
                 "*\n" +
 
-                "   " + emojiNumero +
-                " Cantidad: " +
+                "   🔢 Cantidad: " +
                 producto.cantidad +
                 "\n" +
 
-                "   " + emojiDinero +
-                " Precio: L " +
+                "   💰 Precio: L " +
                 producto.precio +
                 "\n" +
 
-                "   " + emojiBillete +
-                " Subtotal: *L " +
+                "   💵 Subtotal: *L " +
                 subtotal +
                 "*\n\n";
 
@@ -506,22 +495,17 @@ if (checkoutButton) {
 
 
         mensaje +=
-            
+            "━━━━━━━━━━━━━━━━━━━━\n" +
 
-            emojiTarjeta +
-            " *TOTAL DEL PEDIDO: L " +
+            "💳 *TOTAL DEL PEDIDO: L " +
             total +
             "*\n" +
 
-            
+            "━━━━━━━━━━━━━━━━━━━━\n\n" +
 
-            emojiTelefono +
-            " Quedo atento(a) a su confirmacion.\n\n" +
+            "📲 Quedo atento(a) a su confirmación.\n\n" +
 
-            emojiBrillo +
-            " Muchas gracias! " +
-            emojiCorazon +
-            emojiHelado;
+            "✨ ¡Muchas gracias! 💕🍦";
 
 
         const numeroWhatsApp = "50498559682";
@@ -534,7 +518,7 @@ if (checkoutButton) {
             encodeURIComponent(mensaje);
 
 
-        window.location.href = url;
+        window.open(url, "_blank");
 
     });
 
